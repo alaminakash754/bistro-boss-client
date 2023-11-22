@@ -47,14 +47,16 @@ const AuthProvider = ({children}) => {
                 .then(res => {
                     if(res.data.token){
                         localStorage.setItem('access-token', res.data.token);
+                        SetLoading(false);
                     }
                 })
             }
             else{
-                localStorage.removeItem('access-token')
+                localStorage.removeItem('access-token');
+                SetLoading(false);
             }
 
-            SetLoading(false);
+           
 
         });
         return () => {

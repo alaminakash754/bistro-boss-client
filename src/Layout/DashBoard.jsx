@@ -29,7 +29,7 @@ const DashBoard = () => {
                             :
                             <>
                                 <li><NavLink to='/dashboard/userHome'><FaHome></FaHome> User Home</NavLink></li>
-                                <li><NavLink to='/dashboard/reservation'><FaCalculator></FaCalculator> My Reservation</NavLink></li>
+                                <li><NavLink to='/dashboard/paymentHistory'><FaCalculator></FaCalculator> Payment History</NavLink></li>
                                 <li><NavLink to='/dashboard/cart'><FaCartPlus></FaCartPlus> My Cart  ({cart.length})</NavLink></li>
                                 <li><NavLink to='/dashboard/bookings'><FaList></FaList> My Bookings</NavLink></li>
                                 <li><NavLink to='/dashboard/reviews'><FaAd></FaAd> Add a Review</NavLink></li>
